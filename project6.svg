@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Circles grid overlay -->
+  <g fill="#f59e0b" opacity="0.03">
+    <circle cx="50" cy="50" r="2" />
+    <circle cx="150" cy="50" r="2" />
+    <circle cx="250" cy="50" r="2" />
+    <circle cx="350" cy="50" r="2" />
+    <circle cx="450" cy="50" r="2" />
+    <circle cx="550" cy="50" r="2" />
+    <circle cx="50" cy="150" r="2" />
+    <circle cx="150" cy="150" r="2" />
+    <circle cx="250" cy="150" r="2" />
+    <circle cx="350" cy="150" r="2" />
+    <circle cx="450" cy="150" r="2" />
+    <circle cx="550" cy="150" r="2" />
+    <circle cx="50" cy="250" r="2" />
+    <circle cx="150" cy="250" r="2" />
+    <circle cx="250" cy="250" r="2" />
+    <circle cx="350" cy="250" r="2" />
+    <circle cx="450" cy="250" r="2" />
+    <circle cx="550" cy="250" r="2" />
+  </g>
+
+  <!-- Title Graphic -->
+  <text x="50" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="800" letter-spacing="1">E-SHOP PRO</text>
+  <text x="50" y="100" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="16" font-weight="600" letter-spacing="0.5">موقع متجر إلكتروني متكامل وسلة شراء</text>
+
+  <!-- UI Window Container -->
+  <rect x="50" y="140" width="500" height="210" rx="12" fill="#090514" fill-opacity="0.8" stroke="#fbbf24" stroke-width="1.5" />
+  
+  <!-- Browser top bar -->
+  <path d="M50 140 H 550 V 165 H 50 Z" fill="#1e1b4b" />
+  <circle cx="70" cy="152" r="5" fill="#ef4444" />
+  <circle cx="85" cy="152" r="5" fill="#eab308" />
+  <circle cx="100" cy="152" r="5" fill="#22c55e" />
+  
+  <!-- Right: Basket and total price summary -->
+  <g transform="translate(370, 185)">
+    <rect width="150" height="135" rx="8" fill="#151026" stroke="#2e254d" />
+    <text x="75" y="25" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">YOUR CART</text>
+    
+    <!-- Cart Icon -->
+    <path d="M45 42 L52 42 L60 62 L90 62 L98 46 L53 46" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="63" cy="70" r="4" fill="#fbbf24" />
+    <circle cx="87" cy="70" r="4" fill="#fbbf24" />
+    
+    <text x="75" y="92" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11">Subtotal (3 items)</text>
+    <text x="75" y="115" fill="url(#goldGrad)" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">$329.98</text>
+  </g>
+  
+  <!-- Left: Two product items in Grid -->
+  <!-- Product 1 -->
+  <g transform="translate(80, 185)">
+    <rect width="130" height="135" rx="8" fill="#151026" />
+    <!-- Thumbnail shape -->
+    <rect x="15" y="10" width="100" height="60" rx="6" fill="#1e1b4b" />
+    <!-- Abstract phone graphic -->
+    <rect x="55" y="15" width="20" height="40" rx="3" fill="#fbbf24" fill-opacity="0.3" stroke="#fbbf24" stroke-width="1" />
+    <circle cx="65" cy="50" r="2" fill="#fbbf24" />
+    
+    <text x="15" y="88" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="bold">Smart Watch Pro</text>
+    <text x="15" y="105" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">$199.99</text>
+    <!-- Add to cart btn -->
+    <rect x="80" y="93" width="35" height="16" rx="4" fill="#fbbf24" />
+    <text x="97" y="104" fill="#090514" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" text-anchor="middle">ADD</text>
+  </g>
+  
+  <!-- Product 2 -->
+  <g transform="translate(225, 185)">
+    <rect width="130" height="135" rx="8" fill="#151026" />
+    <!-- Thumbnail shape -->
+    <rect x="15" y="10" width="100" height="60" rx="6" fill="#1e1b4b" />
+    <!-- Abstract headphone graphic -->
+    <circle cx="50" cy="35" r="10" fill="none" stroke="#fbbf24" stroke-width="2" />
+    <rect x="38" y="35" width="6" height="12" rx="2" fill="#fbbf24" />
+    <rect x="56" y="35" width="6" height="12" rx="2" fill="#fbbf24" />
+    
+    <text x="15" y="88" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="bold">Wireless Audio</text>
+    <text x="15" y="105" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">$129.99</text>
+    <!-- Add to cart btn -->
+    <rect x="80" y="93" width="35" height="16" rx="4" fill="#fbbf24" />
+    <text x="97" y="104" fill="#090514" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" text-anchor="middle">ADD</text>
+  </g>
+</svg>

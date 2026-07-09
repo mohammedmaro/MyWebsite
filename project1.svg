@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad)" rx="16" />
+  
+  <!-- Grid overlay -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.05">
+    <line x1="50" y1="0" x2="50" y2="400" />
+    <line x1="100" y1="0" x2="100" y2="400" />
+    <line x1="150" y1="0" x2="150" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="400" />
+    <line x1="250" y1="0" x2="250" y2="400" />
+    <line x1="300" y1="0" x2="300" y2="400" />
+    <line x1="350" y1="0" x2="350" y2="400" />
+    <line x1="400" y1="0" x2="400" y2="400" />
+    <line x1="450" y1="0" x2="450" y2="400" />
+    <line x1="500" y1="0" x2="500" y2="400" />
+    <line x1="550" y1="0" x2="550" y2="400" />
+    
+    <line x1="0" y1="50" x2="600" y2="50" />
+    <line x1="0" y1="100" x2="600" y2="100" />
+    <line x1="0" y1="150" x2="600" y2="150" />
+    <line x1="0" y1="200" x2="600" y2="200" />
+    <line x1="0" y1="250" x2="600" y2="250" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="0" y1="355" x2="600" y2="355" />
+  </g>
+
+  <!-- Title Graphic -->
+  <text x="50" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="800" letter-spacing="1">ETHAR PLATFORM</text>
+  <text x="50" y="100" fill="#34d399" font-family="system-ui, sans-serif" font-size="16" font-weight="600" letter-spacing="0.5">منصة إيثار للتبرعات الخيرية</text>
+
+  <!-- Dashboard Frame -->
+  <rect x="50" y="140" width="500" height="210" rx="12" fill="#0f172a" fill-opacity="0.75" stroke="#10b981" stroke-width="2" filter="url(#shadow)" />
+  
+  <!-- Browser top bar -->
+  <path d="M50 140 H 550 V 165 H 50 Z" fill="#1e293b" />
+  <circle cx="70" cy="152" r="5" fill="#ef4444" />
+  <circle cx="85" cy="152" r="5" fill="#f59e0b" />
+  <circle cx="100" cy="152" r="5" fill="#10b981" />
+  <rect x="130" y="147" width="340" height="10" rx="5" fill="#0f172a" opacity="0.5" />
+  
+  <!-- Left Column: Cards/Donors list -->
+  <rect x="75" y="185" width="200" height="35" rx="6" fill="#1e293b" stroke="#10b981" stroke-dasharray="3 3" />
+  <text x="90" y="207" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" opacity="0.9">Total Donations: $124,500</text>
+  
+  <rect x="75" y="230" width="200" height="35" rx="6" fill="#1e293b" />
+  <circle cx="95" cy="247" r="10" fill="#10b981" />
+  <text x="115" y="252" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" opacity="0.8">Active Campaigns: 12</text>
+  
+  <rect x="75" y="275" width="200" height="60" rx="6" fill="#1e293b" />
+  <text x="90" y="295" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Recent Donation</text>
+  <text x="90" y="312" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" opacity="0.6">Anonymous - $500 for Medical</text>
+  <rect x="90" y="322" width="170" height="4" rx="2" fill="#1e293b" />
+  
+  <!-- Right Column: Visualization -->
+  <circle cx="410" cy="250" r="55" fill="none" stroke="#334155" stroke-width="12" />
+  <circle cx="410" cy="250" r="55" fill="none" stroke="url(#cardGrad)" stroke-width="12" stroke-dasharray="240 360" stroke-linecap="round" />
+  
+  <!-- Heart and Hands Illustration inside circle -->
+  <path d="M410 262 C400 248, 388 248, 396 238 C402 230, 410 236, 410 236 C410 236, 418 230, 424 238 C432 248, 420 248, 410 262 Z" fill="url(#accentGrad)" />
+  
+  <text x="410" y="325" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" text-anchor="middle">Goal Reached: 78%</text>
+</svg>

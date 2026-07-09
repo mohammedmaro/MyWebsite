@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Abstract decorative background cards -->
+  <rect x="420" y="60" width="120" height="150" rx="8" fill="#1e293b" opacity="0.15" transform="rotate(15, 480, 135)" />
+  <rect x="440" y="40" width="120" height="150" rx="8" fill="#1e293b" opacity="0.1" transform="rotate(25, 500, 115)" />
+
+  <!-- Title Graphic -->
+  <text x="50" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="800" letter-spacing="1">TASKFLOW</text>
+  <text x="50" y="100" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="16" font-weight="600" letter-spacing="0.5">منصة إدارة المهام والإنتاجية</text>
+
+  <!-- UI Window Container -->
+  <rect x="50" y="140" width="500" height="210" rx="12" fill="#0b0f19" fill-opacity="0.9" stroke="#38bdf8" stroke-width="1.5" />
+  
+  <!-- Browser top bar -->
+  <path d="M50 140 H 550 V 165 H 50 Z" fill="#1e293b" />
+  <circle cx="70" cy="152" r="5" fill="#ef4444" />
+  <circle cx="85" cy="152" r="5" fill="#eab308" />
+  <circle cx="100" cy="152" r="5" fill="#22c55e" />
+  
+  <!-- Content: Left checklist column -->
+  <g transform="translate(80, 185)">
+    <text x="0" y="15" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">TODAY'S TASKLIST</text>
+    
+    <!-- Task Item 1 (Completed) -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="16" height="16" rx="4" fill="#38bdf8" />
+      <path d="M4 8 L7 11 L12 5" fill="none" stroke="#0b0f19" stroke-width="2" />
+      <text x="25" y="12" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-decoration="line-through">Design landing page</text>
+    </g>
+    
+    <!-- Task Item 2 (In Progress) -->
+    <g transform="translate(0, 60)">
+      <rect x="0" y="0" width="16" height="16" rx="4" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+      <text x="25" y="12" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">Integrate API endpoints</text>
+      <!-- Tag -->
+      <rect x="180" y="-2" width="50" height="18" rx="9" fill="#f97316" fill-opacity="0.2" />
+      <text x="205" y="10" fill="#f97316" font-family="system-ui, sans-serif" font-weight="bold" font-size="9" text-anchor="middle">Coding</text>
+    </g>
+    
+    <!-- Task Item 3 (Pending) -->
+    <g transform="translate(0, 90)">
+      <rect x="0" y="0" width="16" height="16" rx="4" fill="none" stroke="#94a3b8" stroke-width="1.5" />
+      <text x="25" y="12" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12">Deploy to staging server</text>
+      <!-- Tag -->
+      <rect x="180" y="-2" width="50" height="18" rx="9" fill="#06b6d4" fill-opacity="0.2" />
+      <text x="205" y="10" fill="#06b6d4" font-family="system-ui, sans-serif" font-weight="bold" font-size="9" text-anchor="middle">DevOps</text>
+    </g>
+  </g>
+  
+  <!-- Right content: Dashboard circular progress -->
+  <g transform="translate(420, 245)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#1e293b" stroke-width="10" />
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#cyanGrad)" stroke-width="10" stroke-dasharray="190 282" stroke-linecap="round" transform="rotate(-90)" />
+    <text x="0" y="6" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">67%</text>
+    <text x="0" y="65" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Completed tasks</text>
+  </g>
+</svg>
