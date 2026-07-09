@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محمد معروف بركات | Portfolio</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="البورتفوليو الشخصي للمهندس محمد معروف محمد بركات - مطور ويب متكامل واخصائي دعم فني شبكات. Portfolio of Eng. Mohammed Maroof Barkat - Full-Stack Web Developer & IT Support Specialist.">
+  <meta name="keywords" content="محمد معروف, معروف بركات, مطور ويب, دعم فني, شبكات, اليمن, جامعة الرازي, Mohammed Maroof, Barkat, Full Stack Developer, IT Support, Web Development">
+  <meta name="author" content="محمد معروف محمد بركات">
+  
+  <!-- Favicon placeholder (using SVG directly in href for absolute reliability) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💻</text></svg>">
+  
+  <!-- Google Fonts: Outfit (English) & Tajawal (Arabic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Progress Bar for Scroll Position -->
+  <div id="scroll-progress"></div>
+
+  <!-- STICKY HEADER -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span class="logo-text lang-ar">م. محمد معروف</span>
+        <span class="logo-text lang-en">Eng. Mohammed</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active"><span class="lang-ar">الرئيسية</span><span class="lang-en">Home</span></a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><span class="lang-ar">من أنا</span><span class="lang-en">About Me</span></a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><span class="lang-ar">المهارات</span><span class="lang-en">Skills</span></a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><span class="lang-ar">مشاريعي</span><span class="lang-en">Projects</span></a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link"><span class="lang-ar">الشهادات</span><span class="lang-en">Certificates</span></a></li>
+          <li class="nav-item"><a href="#blog" class="nav-link"><span class="lang-ar">المدونة</span><span class="lang-en">Blog</span></a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><span class="lang-ar">اتصل بي</span><span class="lang-en">Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities (Theme Switch & Language Switcher) -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="action-btn" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+
+        <!-- Language Switcher Button -->
+        <button class="action-btn lang-switcher" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-ar-label">EN</span>
+          <span class="lang-en-label">AR</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger Trigger -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="main-content">
+    
+    <!-- 1. HOME SECTION -->
+    <section id="home" class="home-section section-padding reveal">
+      <div class="section-container home-grid">
+        <div class="home-info reveal reveal-left">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="lang-ar">متاح للعمل الحر والتعاقد</span>
+            <span class="lang-en">Available for Freelance & Contracts</span>
+          </div>
+          
+          <h1 class="hero-name">
+            <span class="lang-ar">محمد معروف محمد بركات</span>
+            <span class="lang-en">Mohammed Maroof Barkat</span>
+          </h1>
+          
+          <h2 class="hero-title">
+            <span class="lang-ar">مطور ويب <span class="accent-text">|</span> أخصائي دعم فني تقني</span>
+            <span class="lang-en"> Web Developer <span class="accent-text">|</span> IT Support Specialist</span>
+          </h2>
+          
+          <p class="hero-description">
+            <span class="lang-ar">أقوم ببناء تطبيقات ويب إلى جانب إدارة البنى التحتية لتكنولوجيا المعلومات وتكوين الشبكات وحل المشكلات البرمجية والتقنية .</span>
+            <span class="lang-en">I build web applications, while also managing IT infrastructures, configuring network routing, and delivering technical support solutions.</span>
+          </p>
+
+          <div class="hero-actions">
+            <!-- CTA: Download CV using a real PDF download asset -->
+            <a href="assets/cv.pdf" download="Mohammed-Maroof-CV.pdf" class="btn btn-primary" id="download-cv-btn">
+              <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+              <span class="lang-ar">تحميل السيرة الذاتية</span>
+              <span class="lang-en">Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span class="lang-ar">تواصل معي</span>
+              <span class="lang-en">Get in Touch</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">2026</span>
+              <span class="stat-label lang-ar">سنة التخرج</span>
+              <span class="stat-label lang-en">Graduation Year</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label lang-ar">مشاريع منجزة</span>
+              <span class="stat-label lang-en">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">7+</span>
+              <span class="stat-label lang-ar">شهادات معتمدة</span>
+              <span class="stat-label lang-en">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-avatar-container reveal reveal-right">
+          <div class="avatar-wrapper">
+            <!-- Geometric animated frame around avatar image -->
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-ring ring-3"></div>
+            <div class="avatar-frame">
+              <img src="assets/me.jpg" alt="Eng. Mohammed Maroof Barkat" class="profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="about-section section-padding bg-alt reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="lang-ar">من أنا / About Me</span>
+            <span class="lang-en">About Me / من أنا</span>
+          </h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-content grid-2">
+          <div class="about-text-container reveal reveal-left">
+            <h3 class="about-subtitle">
+              <span class="lang-ar">مطور مواقع وأخصائي فني شغوف بالابتكار التقني</span>
+              <span class="lang-en">Web Developer and Technical Specialist Passionate About Tech Innovation</span>
+            </h3>
+            
+            <p class="about-narrative">
+              <span class="lang-ar">أنا خريج بكالوريوس تقنية معلومات，
+ أمتلك شغفاً حقيقياً بحل المشكلات التقنية وتطوير تطبيقات ويب تسهل حياة المستخدمين.
+ إلى جانب مهاراتي في البرمجة，
+ لدي فهم للبنية التحتية لتكنولوجيا المعلومات وإدارة الشبكات والانظمة 
+، مما يمكنني من تقديم حلول تكنولوجية شاملة</span>
+              <span class="lang-en">I am a passionate web developer and technical specialist with a strong background in solving technical problems and developing user-friendly web applications. In addition to my programming skills, I have a solid understanding of IT infrastructures, network management, and system administration, which enables me to provide comprehensive technological solutions.</span>
+            </p>
+
+            <div class="education-card">
+              <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="edu-details">
+                <span class="edu-date">2022 - 2026</span>
+                <h4 class="edu-degree">
+                  <span class="lang-ar">بكالوريوس تقنية المعلومات</span>
+                  <span class="lang-en">Bachelor of Information Technology</span>
+                </h4>
+                <p class="edu-school">
+                  <span class="lang-ar">جامعة الرازي (حاصل على امتياز لعام 2026)</span>
+                  <span class="lang-en">Al-Razi University (Graduated with excellence for the year 2026)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlights reveal reveal-right">
+            <div class="highlight-grid">
+              <div class="highlight-item">
+                <span class="hl-icon"><i class="fa-solid fa-brain"></i></span>
+                <h4 class="hl-title lang-ar">حل المشكلات</h4>
+                <h4 class="hl-title lang-en">Problem Solving</h4>
+                <p class="hl-desc lang-ar">تحليل الأعطال البرمجية والشبكية وإصلاحها بذكاء وسرعة.</p>
+                <p class="hl-desc lang-en">Analyzing and resolving software and network anomalies efficiently.</p>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <h4 class="hl-title lang-ar">إدارة الشبكات</h4>
+                <h4 class="hl-title lang-en">Network Management</h4>
+                <p class="hl-desc lang-ar">إعداد وتأمين الشبكات المحلية.</p>
+                <p class="hl-desc lang-en">Setting up and securing local networks.</p>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-icon"><i class="fa-solid fa-laptop-code"></i></span>
+                <h4 class="hl-title lang-ar">تطوير الويب</h4>
+                <h4 class="hl-title lang-en">Web Development</h4>
+                <p class="hl-desc lang-ar">بناء منصات تفاعلية باستخدام أحدث التقنيات البرمجية.</p>
+                <p class="hl-desc lang-en">Crafting interactive platforms using modern framework stacks.</p>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-icon"><i class="fa-solid fa-circle-nodes"></i></span>
+                <h4 class="hl-title lang-ar">إدارة البيانات</h4>
+                <h4 class="hl-title lang-en">Data Administration</h4>
+                <p class="hl-desc lang-ar">تصميم قواعد بيانات علائقية سريعة وتحسين استعلامات SQL.</p>
+                <p class="hl-desc lang-en">Designing relational databases and optimizing query execution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills" class="skills-section section-padding reveal">
+      <div class="section-container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title">
+            <span class="lang-ar">المهارات التقنية / Technical Skills</span>
+            <span class="lang-en">Technical Skills / المهارات التقنية</span>
+          </h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-grid reveal stagger-grid">
+          <!-- Skill Card 1: Web Development -->
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="skill-card-title">
+              <span class="lang-ar">تطوير الويب (Frontend & Backend)</span>
+              <span class="lang-en">Web Development (Full-Stack)</span>
+            </h3>
+            <p class="skill-card-desc">
+              <span class="lang-ar"> بناء واجهات تفاعلية جذابة متوافقة مع جميع الشاشات.</span>
+              <span class="lang-en">Building highly interactive frontends coupled with secure, high-performance backends and clean REST APIs.</span>
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+              <span class="tech-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="tech-tag"><i class="fa-brands fa-react"></i> React.js</span>
+              <span class="tech-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+              <span class="tech-tag"><i class="fa-solid fa-server"></i> PHP</span>
+              <span class="tech-tag"><i class="fa-brands fa-git-alt"></i> Git/GitHub</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Database Administration -->
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3 class="skill-card-title">
+              <span class="lang-ar">إدارة قواعد البيانات وتصميمها</span>
+              <span class="lang-en">Database Administration</span>
+            </h3>
+            <p class="skill-card-desc">
+              <span class="lang-ar">تصميم مخططات الكيانات (ERD) وهيكلة قواعد البيانات، كتابة استعلامات معقدة وسريعة، وإدارة البيانات بشكل يضمن السلامة والسرعة.</span>
+              <span class="lang-en">Designing database structures, executing complex SQL queries, database indexing, and ensuring data consistency.</span>
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-solid fa-table"></i> MySQL / SQL Server</span>
+              <span class="tech-tag"><i class="fa-solid fa-gears"></i> Mongodb</span>
+              <span class="tech-tag"><i class="fa-solid fa-diagram-project"></i> Relational Models</span>
+              <span class="tech-tag"><i class="fa-solid fa-gauge-high"></i> Optimization</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: IT Support -->
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3 class="skill-card-title">
+              <span class="lang-ar">الدعم الفني واستكشاف الأخطاء</span>
+              <span class="lang-en">IT Support & Troubleshooting</span>
+            </h3>
+            <p class="skill-card-desc">
+              <span class="lang-ar">تشخيص أعطال الحواسيب وتثبيت أنظمة التشغيل، وصيانة الأجهزة والبرمجيات، وتقديم الدعم الفني المباشر للمستخدمين والموظفين بحلول عملية.</span>
+              <span class="lang-en">Diagnosing hardware/software failures, operating system deployment, system backups, and rendering professional helpdesk support.</span>
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-windows"></i> Windows OS</span>
+              <span class="tech-tag"><i class="fa-solid fa-circle-nodes"></i> OS Installation</span>
+              <span class="tech-tag"><i class="fa-solid fa-hammer"></i> Hardware Maintenance</span>
+              <span class="tech-tag"><i class="fa-solid fa-arrows-spin"></i> Backup Recovery</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Network Basics -->
+          <div class="skill-card">
+            <div class="skill-card-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3 class="skill-card-title">
+              <span class="lang-ar">أساسيات الشبكات وإدارة MikroTik</span>
+              <span class="lang-en">Network Basics & MikroTik</span>
+            </h3>
+            <p class="skill-card-desc">
+              <span class="lang-ar">تثبيت وتكوين الشبكات المحلية (LAN/WAN) وإعداد أجهزة MikroTik  وتوزيع صلاحيات الإنترنت بشكل آمن.</span>
+              <span class="lang-en">Setting up local area networks (LAN/WAN), routing, switching, and deploying MikroTik RouterOS scripts for user authentication.</span>
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-solid fa-router"></i> MikroTik RouterOS</span>
+              <span class="tech-tag"><i class="fa-solid fa-route"></i> Routing & Switching</span>
+              <span class="tech-tag"><i class="fa-solid fa-shield"></i> Network Security</span>
+              <span class="tech-tag"><i class="fa-solid fa-wifi"></i> Hotspot Setup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects" class="projects-section section-padding bg-alt reveal">
+      <div class="section-container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title">
+            <span class="lang-ar">مشاريعي / My Projects</span>
+            <span class="lang-en">My Projects / مشاريعي</span>
+          </h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-wrapper">
+          <button class="filter-btn active" data-filter="all">
+            <span class="lang-ar">الكل</span>
+            <span class="lang-en">All</span>
+          </button>
+          <button class="filter-btn" data-filter="web">
+            <span class="lang-ar">تطوير الويب</span>
+            <span class="lang-en">Web Apps</span>
+          </button>
+          <button class="filter-btn" data-filter="desktop">
+            <span class="lang-ar">أنظمة وتطبيقات</span>
+            <span class="lang-en">Systems & Apps</span>
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid reveal stagger-grid">
+          <!-- Project 1: Ethar Platform -->
+          <div class="project-card" data-category="web">
+            <div class="project-img-container">
+              <img src="assets/project1.svg" alt="منصة أثر للتبرعات الإنسانية" class="project-img">
+              <div class="project-overlay">
+                <button class="btn btn-primary view-details-btn" data-project="1">
+                  <span class="lang-ar">عرض التفاصيل</span>
+                  <span class="lang-en">View Details</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Web Development</span>
+              <h3 class="project-title">
+                <span class="lang-ar">منصة أثر للتبرعات الإنسانية</span>
+                <span class="lang-en">Athar Charitable Donation Platform</span>
+              </h3>
+            </div>
+          </div>
+
+          <!-- Project 2: Restaurant Management System -->
+          <div class="project-card" data-category="desktop">
+            <div class="project-img-container">
+              <img src="assets/project2.svg" alt="نظام حاسوبي لإدارة المطاعم" class="project-img">
+              <div class="project-overlay">
+                <button class="btn btn-primary view-details-btn" data-project="2">
+                  <span class="lang-ar">عرض التفاصيل</span>
+                  <span class="lang-en">View Details</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Database & System</span>
+              <h3 class="project-title">
+                <span class="lang-ar">نظام حاسوبي لإدارة المطاعم</span>
+                <span class="lang-en">Restaurant Management System</span>
+              </h3>
+            </div>
+          </div>
+
+          <!-- Project 3: Personality Analysis Application -->
+          <div class="project-card" data-category="desktop">
+            <div class="project-img-container">
+              <img src="assets/project3.svg" alt="تطبيق تحليل الشخصية" class="project-img">
+              <div class="project-overlay">
+                <button class="btn btn-primary view-details-btn" data-project="3">
+                  <span class="lang-ar">عرض التفاصيل</span>
+                  <span class="lang-en">View Details</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Algorithms / JS</span>
+              <h3 class="project-title">
+                <span class="lang-ar">تطبيق تحليل الشخصية</span>
+                <span class="lang-en">Personality Analysis Application</span>
+              </h3>
+            </div>
+          </div>
+
+          <!-- Project 4: Daily Expense Management App -->
+          <div class="project-card" data-category="web">
+            <div class="project-img-container">
+              <img src="assets/project4.svg" alt="تطبيق إدارة المصروف اليومي" class="project-img">
+              <div class="project-overlay">
+                <button class="btn btn-primary view-details-btn" data-project="4">
+                  <span class="lang-ar">عرض التفاصيل</span>
+                  <span class="lang-en">View Details</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Web Development</span>
+              <h3 class="project-title">
+                <span class="lang-ar">تطبيق إدارة المصروف اليومي</span>
+                <span class="lang-en">Daily Expense Management App</span>
+              </h3>
+            </div>
+          </div>
+
+          <!-- Project 5: To-Do & Task Management Platform -->
+          <div class="project-card" data-category="web">
+            <div class="project-img-container">
+              <img src="assets/project5.svg" alt="منصة إدارة المهام اليومية" class="project-img">
+              <div class="project-overlay">
+                <button class="btn btn-primary view-details-btn" data-project="5">
+                  <span class="lang-ar">عرض التفاصيل</span>
+                  <span class="lang-en">View Details</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Web Development</span>
+              <h3 class="project-title">
+                <span class="lang-ar">منصة إدارة المهام اليومية</span>
+                <span class="lang-en">To-Do & Task Management Platform</span>
+              </h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CERTIFICATES SECTION -->
+    <section id="certificates" class="certificates-section section-padding">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="lang-ar">الشهادات والخبرات / Certificates</span>
+            <span class="lang-en">Certificates & Achievements / الشهادات والخبرات</span>
+          </h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="certificates-grid reveal stagger-grid">
+          <!-- Card 1: ICDL -->
+          <div class="certificate-card stagger-item">
+            <div class="cert-header">
+              <span class="cert-year">2022</span>
+              <span class="cert-badge-icon"><i class="fa-solid fa-laptop-code"></i></span>
+            </div>
+            <h3 class="cert-title">
+              <span class="lang-ar">الرخصة الدولية لقيادة الحاسوب (ICDL)</span>
+              <span class="lang-en">International Computer Driving License (ICDL)</span>
+            </h3>
+            <p class="cert-org">
+              <span class="lang-ar"><i class="fa-solid fa-building-columns"></i>  منصة ادراك</span>
+              <span class="lang-en"><i class="fa-solid fa-building-columns"></i> Accredited IT Institute</span>
+            </p>
+            <p class="cert-desc">
+              <span class="lang-ar">
+شهادة تغطي إتقان استخدام أنظمة التشغيل، تطبيقات الأوفيس الأساسية، إدارة الملفات، والإنترنت بشكل احترافي.</span>
+              <span class="lang-en">Certification demonstrating proficiency in computer fundamentals, word processing, spreadsheets, and database usage.</span>
+            </p>
+          </div>
+
+          <!-- Card 2: MikroTik -->
+          <div class="certificate-card stagger-item">
+            <div class="cert-header">
+              <span class="cert-year">2024</span>
+              <span class="cert-badge-icon"><i class="fa-solid fa-route"></i></span>
+            </div>
+            <h3 class="cert-title">
+              <span class="lang-ar">شهادة دورة MikroTik لإدارة الشبكات</span>
+              <span class="lang-en">MikroTik Network Management Course</span>
+            </h3>
+            <p class="cert-org">
+              <span class="lang-ar"><i class="fa-solid fa-network-wired"></i> معهد نيوهورايزون</span>
+              <span class="lang-en"><i class="fa-solid fa-network-wired"></i> New Horizons Networking Institute</span>
+            </p>
+            <p class="cert-desc">
+              <span class="lang-ar">
+دراسة لتكوين أنظمة الراوترات، جدران الحماية، وإدارة عرض النطاق الترددي للإنترنت وتهيئة الهوت سبوت للمستخدمين.</span>
+              <span class="lang-en">Deep dive into configuring RouterOS, establishing firewall rules, traffic shaping, and custom user network access profiles.</span>
+            </p>
+          </div>
+
+          <!-- Card 3: Digital Marketing -->
+          <div class="certificate-card stagger-item">
+            <div class="cert-header">
+              <span class="cert-year">2024</span>
+              <span class="cert-badge-icon"><i class="fa-solid fa-chart-line"></i></span>
+            </div>
+            <h3 class="cert-title">
+              <span class="lang-ar">دورة التسويق الاحترافي</span>
+              <span class="lang-en">Professional Marketing Course</span>
+            </h3>
+            <p class="cert-org">
+              <span class="lang-ar"><i class="fa-solid fa-graduation-cap"></i>مركز صناع القادة للتدريب و التأهيل</span>
+              <span class="lang-en"><i class="fa-solid fa-graduation-cap"></i> Digital Academy for Future Skills</span>
+            </p>
+            <p class="cert-desc">
+              <span class="lang-ar">دراسة فن وعلم إيصال المنتج المناسب إلى الشخص المناسب، في الوقت المناسب، وبالسعر المناسب</span>
+              <span class="lang-en">Studying the art and science of delivering the right product to the right person at the right time and at the right price.</span>
+            </p>
+          </div>
+
+          <!-- Card 4: Leadership -->
+          <div class="certificate-card stagger-item">
+            <div class="cert-header">
+              <span class="cert-year">2025</span>
+              <span class="cert-badge-icon"><i class="fa-solid fa-users"></i></span>
+            </div>
+            <h3 class="cert-title">
+              <span class="lang-ar">برنامج إعداد القائد الناجح والمؤثر</span>
+              <span class="lang-en">Successful & Influential Leader Program</span>
+            </h3>
+            <p class="cert-org">
+              <span class="lang-ar"><i class="fa-solid fa-shield-halved"></i> مؤسسة صناع القرار الدولية للتنمية البشريه</span>
+              <span class="lang-en"><i class="fa-solid fa-shield-halved"></i> International Decision Makers Foundation for Human Development</span>
+            </p>
+            <p class="cert-desc">
+              <span class="lang-ar">تدريب على مهارات القيادة، وحل النزاعات و توجيه الناس بالاسلوب المناسب لطبيعته، وإدارة الوقت والتعامل مع الضغوطات.</span>
+              <span class="lang-en">Training on leadership skills, conflict resolution, and effective team management, along with time management and stress handling.</span>
+            </p>
+          </div>
+
+          <!-- Card 5: Network Basics -->
+          <div class="certificate-card stagger-item">
+            <div class="cert-header">
+              <span class="cert-year">2025</span>
+              <span class="cert-badge-icon"><i class="fa-solid fa-server"></i></span>
+            </div>
+            <h3 class="cert-title">
+              <span class="lang-ar">شهادة أساسيات الشبكات (Network Basics)</span>
+              <span class="lang-en">Network Basics Certification</span>
+            </h3>
+            <p class="cert-org">
+              <span class="lang-ar"><i class="fa-solid fa-circle-nodes"></i>منصة معارف</span>
+              <span class="lang-en"><i class="fa-solid fa-circle-nodes"></i>Maaref Platform</span>
+            </p>
+            <p class="cert-desc">
+              <span class="lang-ar">تغطية أساسيات طبقات الشبكة (OSI Layers)، بروتوكول TCP/IP، مفاهيم التوجيه والتبديل (Routing & Switching)، وتخطيط عناوين IP (Subnetting).</span>
+              <span class="lang-en">Understanding foundational network topologies, OSI layers, IPv4/IPv6 subnetting, routing protocols, and local infrastructure setup.</span>
+            </p>
+          </div>
+
+          <!-- Card 6: Database Fundamentals -->
+          <div class="certificate-card stagger-item">
+            <div class="cert-header">
+              <span class="cert-year">2025</span>
+              <span class="cert-badge-icon"><i class="fa-solid fa-database"></i></span>
+            </div>
+            <h3 class="cert-title">
+              <span class="lang-ar">شهادة أساسيات قواعد البيانات (Database Fundamentals)</span>
+              <span class="lang-en">Database Fundamentals Certificate</span>
+            </h3>
+            <p class="cert-org">
+              <span class="lang-ar"><i class="fa-solid fa-gears"></i> منصة سطر</span>
+              <span class="lang-en"><i class="fa-solid fa-gears"></i> Satr Platform</span>
+            </p>
+            <p class="cert-desc">
+              <span class="lang-ar">التمكن من مفاهيم قواعد البيانات العلائقية </span>
+              <span class="lang-en">Understanding relational database concepts and performance optimization.</span>
+            </p>
+          </div>
+
+          <!-- Card 7: E-commerce -->
+          <div class="certificate-card stagger-item">
+            <div class="cert-header">
+              <span class="cert-year">2026</span>
+              <span class="cert-badge-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+            </div>
+            <h3 class="cert-title">
+              <span class="lang-ar">دورة في التجارة الإلكترونية</span>
+              <span class="lang-en">E-Commerce Development & Business</span>
+            </h3>
+            <p class="cert-org">
+              <span class="lang-ar"><i class="fa-solid fa-globe"></i>أكاديمية القدسي الأعمال الرقمية</span>
+              <span class="lang-en"><i class="fa-solid fa-globe"></i>Al-Quds Digital Business Academy</span>
+            </p>
+            <p class="cert-desc">
+              <span class="lang-ar">فهم سلوك المستهلك عبر الإنترنت، ربط بوابات الدفع الإلكتروني، إدارة اللوجستيات، وضمان سرية وأمان المعاملات المالية للمستخدمين.</span>
+              <span class="lang-en">Familiarity with online storefront setup, checkout processing pipelines, financial gateway integrations, and data security.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BLOG SECTION -->
+  <section id="blog" class="blog-section section-padding bg-alt reveal">
+  <div class="section-container">
+    <div class="section-header reveal-up">
+      <h2 class="section-title">
+        <span class="lang-ar">المدونة / My Blog</span>
+        <span class="lang-en">My Blog / مدونتي</span>
+      </h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <div class="blog-grid reveal stagger-grid">
+
+      <!-- Blog Card 1 -->
+      <article class="blog-card">
+        <div class="blog-badge">Technology</div>
+        <div class="blog-content">
+          <span class="blog-date"><i class="fa-regular fa-calendar"></i> July 8, 2026</span>
+
+          <h3 class="blog-card-title">
+            <span class="lang-ar">التقنية ليست أجهزة... بل رسالة</span>
+            <span class="lang-en">Technology Is More Than Devices... It's a Mission</span>
+          </h3>
+
+          <p class="blog-snippet">
+            <span class="lang-ar">
+              التقنية ليست مجرد حواسيب وشبكات، بل وسيلة لخدمة الناس وحل مشكلاتهم. تعرف كيف يمكن لمختص تقنية المعلومات أن يصنع أثرًا حقيقيًا بعلمه وأخلاقه.
+            </span>
+
+            <span class="lang-en">
+              Technology is not only about computers and networks. Discover how IT professionals can create meaningful impact through knowledge, ethics, and continuous learning.
+            </span>
+          </p>
+
+          <a href="javascript:void(0)" class="blog-read-more-btn" data-post="1">
+            <span class="lang-ar">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></span>
+            <span class="lang-en">Read More <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Blog Card 2 -->
+      <article class="blog-card">
+        <div class="blog-badge">Faith</div>
+
+        <div class="blog-content">
+          <span class="blog-date"><i class="fa-regular fa-calendar"></i> July 8, 2026</span>
+
+          <h3 class="blog-card-title">
+            <span class="lang-ar">بين لوحة المفاتيح والمصحف</span>
+            <span class="lang-en">Between the Keyboard and the Quran</span>
+          </h3>
+
+          <p class="blog-snippet">
+            <span class="lang-ar">
+              كيف يوازن المسلم بين النجاح المهني والإيمان؟ رحلة تجمع بين إتقان العمل، وطلب العلم، والمحافظة على العبادة لبناء شخصية متوازنة.
+            </span>
+
+            <span class="lang-en">
+              Learn how faith and technology complement each other, helping professionals balance career success with spirituality and meaningful living.
+            </span>
+          </p>
+
+          <a href="javascript:void(0)" class="blog-read-more-btn" data-post="2">
+            <span class="lang-ar">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></span>
+            <span class="lang-en">Read More <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Blog Card 3 -->
+      <article class="blog-card">
+        <div class="blog-badge">Self Growth</div>
+
+        <div class="blog-content">
+          <span class="blog-date"><i class="fa-regular fa-calendar"></i> July 8, 2026</span>
+
+          <h3 class="blog-card-title">
+            <span class="lang-ar">بناء الذات رحلة لا تنتهي</span>
+            <span class="lang-en">Self-Development Is a Lifelong Journey</span>
+          </h3>
+
+          <p class="blog-snippet">
+            <span class="lang-ar">
+              النجاح لا يتحقق بخطوة واحدة، بل بعادات صغيرة تتكرر يومًا بعد يوم. تعرف على أهم المبادئ التي تساعدك في بناء ذاتك وتحقيق أهدافك.
+            </span>
+
+            <span class="lang-en">
+              Personal growth is built through consistent habits, continuous learning, and perseverance. Discover practical principles for lifelong success.
+            </span>
+          </p>
+
+          <a href="javascript:void(0)" class="blog-read-more-btn" data-post="3">
+            <span class="lang-ar">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></span>
+            <span class="lang-en">Read More <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="contact-section section-padding reveal">
+      <div class="section-container">
+        <div class="section-header reveal-up">
+          <h2 class="section-title">
+            <span class="lang-ar">اتصل بي / Contact Me</span>
+            <span class="lang-en">Contact Me / اتصل بي</span>
+          </h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid grid-2">
+          <!-- Contact Info Column -->
+          <div class="contact-info-container reveal reveal-left">
+            <h3 class="contact-subtitle">
+              <span class="lang-ar">دعنا نعمل معاً على مشروعك القادم</span>
+              <span class="lang-en">Let's Collaborate on Your Next Venture</span>
+            </h3>
+            <p class="contact-narrative">
+              <span class="lang-ar">سواء كنت بحاجة إلى موقع ويب مخصص متكامل، أو شبكة سلكية/لاسلكية تحتاج لإعداد وصيانة، أو كنت تبحث عن استشارات دعم فني، فلا تتردد بالتواصل معي. سأرد عليك في غضون 24 ساعة.</span>
+              <span class="lang-en">Whether you're after a tailored web app, want local network infrastructures deployed, or seek qualified IT helpdesk assistance, I'm just a message away.</span>
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Item 1: Phone / WhatsApp -->
+              <div class="detail-item">
+                <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label lang-ar">الهاتف / واتساب</span>
+                  <span class="detail-label lang-en">Phone / WhatsApp</span>
+                  <a href="https://wa.me/967772896644" target="_blank" class="detail-value" dir="ltr">+967 772 896 644</a>
+                </div>
+              </div>
+
+              <!-- Item 2: Email -->
+              <div class="detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label lang-ar">البريد الإلكتروني</span>
+                  <span class="detail-label lang-en">Email Address</span>
+                  <a href="mailto:mohammedmaroofbarkat@gmail.com" class="detail-value">mohammedmaroofbarkat@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Item 3: Location -->
+              <div class="detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label lang-ar">الموقع</span>
+                  <span class="detail-label lang-en">Location</span>
+                  <span class="detail-value">
+                    <span class="lang-ar">صنعاء، اليمن</span>
+                    <span class="lang-en">Sana'a, Yemen</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Grid -->
+            <div class="social-links-wrapper">
+              <h4 class="social-title lang-ar">تابعني على الشبكات</h4>
+              <h4 class="social-title lang-en">Social Platforms</h4>
+              <div class="social-links">
+                <a href="mailto:mohammedmaroofbarkat@gmail.com" class="social-link-btn" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/mohammedmaro" target="_blank" class="social-link-btn" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-barkat-793220344/" target="_blank" class="social-link-btn" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- <a href="https://facebook.com" target="_blank" class="social-link-btn" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="motivational-cards-stack reveal reveal-right">
+            <div class="motivational-flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-face flip-card-front">
+                  <span class="flip-icon"><i class="fa-solid fa-star"></i></span>
+                  <p class="motivational-text-card">
+                    <span class="lang-ar">كل خطوة صغيرة تقربك من حلمك.</span>
+                    <span class="lang-en">Every small step brings you closer to your dream.</span>
+                  </p>
+                </div>
+                <div class="flip-card-face flip-card-back">
+                  <p class="motivational-text-card">
+                    <span class="lang-ar">ابدأ الآن، والنتائج ستأتي لاحقًا.</span>
+                    <span class="lang-en">Start now, and the results will follow.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="motivational-flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-face flip-card-front">
+                  <span class="flip-icon"><i class="fa-solid fa-bolt"></i></span>
+                  <p class="motivational-text-card">
+                    <span class="lang-ar">الاستمرار يفتح أبوابًا لا ترىُها البداية.</span>
+                    <span class="lang-en">Consistency opens doors you cannot see at the start.</span>
+                  </p>
+                </div>
+                <div class="flip-card-face flip-card-back">
+                  <p class="motivational-text-card">
+                    <span class="lang-ar">أنت أقوى مما تتخيل عندما تواصل.</span>
+                    <span class="lang-en">You are stronger than you think when you keep going.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="motivational-flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-face flip-card-front">
+                  <span class="flip-icon"><i class="fa-solid fa-lightbulb"></i></span>
+                  <p class="motivational-text-card">
+                    <span class="lang-ar">الفكرة الجيدة تحتاج إلى التزامٍ بسيط.</span>
+                    <span class="lang-en">A great idea needs only a small, steady commitment.</span>
+                  </p>
+                </div>
+                <div class="flip-card-face flip-card-back">
+                  <p class="motivational-text-card">
+                    <span class="lang-ar">اختر أن تبدأ اليوم، لا غدًا.</span>
+                    <span class="lang-en">Choose to begin today, not tomorrow.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="motivational-flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-face flip-card-front">
+                  <span class="flip-icon"><i class="fa-solid fa-rocket"></i></span>
+                  <p class="motivational-text-card">
+                    <span class="lang-ar">كل مشروع يبدأ بخطوة واحدة فقط.</span>
+                    <span class="lang-en">Every project starts with one single step.</span>
+                  </p>
+                </div>
+                <div class="flip-card-face flip-card-back">
+                  <p class="motivational-text-card">
+                    <span class="lang-ar">ثق أن التقدم سيأتي من الاستمرار.</span>
+                    <span class="lang-en">Trust that progress comes from staying committed.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p class="copyright">
+          <span class="lang-ar">&copy; 2026 م. محمد معروف بركات. جميع الحقوق محفوظة.</span>
+          <span class="lang-en">&copy; 2026 Eng. Mohammed Maroof Barkat. All rights reserved.</span>
+        </p>
+        <p class="designer-credits">
+          <span class="lang-ar">تم التصميم والتطوير بـ <i class="fa-solid fa-heart accent-text"></i></span>
+          <span class="lang-en">Designed & Coded with <i class="fa-solid fa-heart accent-text"></i></span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODERN DETAIL OVERLAY MODAL (FOR PROJECTS & BLOGS) -->
+  <div class="modal-backdrop" id="modal-container" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close details">&times;</button>
+      
+      <div class="modal-body-content" id="modal-content-target">
+        <!-- JS inserts content dynamically here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CORE SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>
